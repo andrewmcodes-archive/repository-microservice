@@ -1,7 +1,7 @@
 'use strict'
 
 const githubRepositories = require('github-repositories')
-const debug = require('debug-logfmt')('oss')
+const debug = require('debug-logfmt')('debug')
 const pTimeout = require('p-timeout')
 const pReflect = require('p-reflect')
 const { orderBy } = require('lodash')

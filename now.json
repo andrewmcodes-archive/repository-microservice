@@ -1,5 +1,5 @@
 {
-  "name": "oss",
+  "name": "repository-microservice",
   "version": 2,
   "builds": [
     {
@@ -9,7 +9,7 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "DEBUG": "oss*"
+    "DEBUG": "debug*"
   },
   "routes": [
     {

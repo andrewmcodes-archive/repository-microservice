@@ -1,23 +1,68 @@
-<div align="center">
-  <img src="https://cdn.microlink.io/banner/oss.png" alt="microlink oss">
-</div>
+<p align="center">
+  <a href="https://andrewm.codes" target="_blank" rel="noopener noreferrer">
+    <img src="https://github.com/andrewmcodes/repository-microservice/blob/main/repository-microservice/img/logo.svg" width="128" height="128">
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://badgen.net/github/license/andrewmcodes/repository-microservice" alt="License: MIT">
+  <img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant">
+</p>
+
+<h1 align="center">
+  Repository Microservice
+</h1>
+
+Take a [look at this Pawprint for a quick understanding!](https://paw.pt/fCAF6W7m)
+
+## Features
+
+API endpoint for my GitHub repositories via Vercel API.
+
+It is currently hosted [on Vercel](https://repositories.andrewmcodes.vercel.app/), but that will change in the future and instead it will be on a subdomain of my blog.
+
+## Usage
+
+### Request
+
+```sh
+curl https://repositories.andrewmcodes.vercel.app/
+```
+
+### Response
+
+```json
+[
+  {
+    "id": 205964243,
+    ...
+    },
+  {
+    "id": 157638780,
+    ...
+  }
+]
+```
+
+Output is a JSON array of repositories. See [GitHub's list organization repositories documentation](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#list-organization-repositories) to learn more.
+
+## Installation
+
+>NOTE this will use microlinks repo, not mine. The only major difference is I inlined my username for fetching the accounts vs using an env var.
 
 [![Deploy with Vercel](https://zeit.co/button)](https://vercel.com/new/project?template=https://github.com/microlinkhq/oss)
 
-> Microservice to get the latest public GitHub repos from a user/organization.
+## Achknowledgement
 
-# Environment Variables
+This was originally forked from [microlinkhq/oss](https://github.com/microlinkhq/oss) when deploying to Vercel (which is why this
+repo is not an actual fork) by Vercel.
 
-### GITHUB_USER
+Big thanks to them for their work - Definitely check out some of their products if this repo is of interest to you.
 
-*Required*</br>
-Type: `string`
-
-The Username or organization to fetch repos from.
+> [microlink.io](https://microlink.io) · GitHub [microlink.io](https://github.com/microlinkhq) · Twitter [@microlinkhq](https://twitter.com/microlinkhq)
 
 ## License
 
-**oss** © [microlink.io](https://microlink.io), released under the [MIT](https://github.com/microlinkhq/oss/blob/master/LICENSE.md) License.<br>
-Authored and maintained by microlink.io with help from [contributors](https://github.com/microlinkhq/oss/contributors).
+[MIT](https://opensource.org/licenses/MIT)
 
-> [microlink.io](https://microlink.io) · GitHub [microlink.io](https://github.com/microlinkhq) · Twitter [@microlinkhq](https://twitter.com/microlinkhq)
+Copyright (c) 2020-present, Andrew Mason
