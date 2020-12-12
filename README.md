@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://andrewm.codes" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/andrewmcodes/repository-microservice/blob/main/.github/img/logo.svg" width="128" height="128">
+    <img src="https://github.com/andrewmcodes/repository-microservice/blob/main/.github/img/logo.png?raw=true" alt="Social Sharing Image" style="max-width:100%;">
   </a>
 </p>
 
